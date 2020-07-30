@@ -7,7 +7,7 @@ form.addEventListener('submit',(e)=>{
     e.preventDefault()
     console.log('testing')
     const address=e.target.address.value
-    fetch(`http://localhost:3000/weather?address=${address}`)
+    fetch(`https://tenki-oyo.herokuapp.com/weather?address=${address}`)
     .then(resp=>resp.json())
     .then(data=>{
         console.log(data)
