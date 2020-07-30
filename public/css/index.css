@@ -1,0 +1,18 @@
+body{
+    background-image:url('/images/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-clip: content-box;
+}
+
+#show{
+    background-image:none;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+    
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    {{>bootstrap}}
+    <link rel="icon" href="/images/icon.png">
+    
+    <title>Home Page</title>
+</head>
+<body>
+        <div>
+        <h1 class="p-2 text-white" id='title'>{{title}}</h1>
+        {{>header}}
+        <div class="container text-center my-4" id="show">
+            <h1 class="text-white">Enter the location to get weather details</h1>
+            <form action="" id="form" class="p-2">
+                <input type="text" name="address" id="" placeholder="location">
+                <input type="submit" class="btn btn-warning" value="Search">
+            </form>
+            <div class="container" >
+            <p id="message1"></p>
+            <p id="message2" class="mb-4"></p>
+            </div>
+        </div>
+        {{!-- Footer --}}
+        <p class="fixed-bottom p-3 text-white">Created by : {{name}} <br><a target="_blank" href="https://icons8.com/icons/set/partly-cloudy-day">Partly Cloudy Day icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+        </div>
+        <script src='/js/app1.js'></script>
+</body>
+</html>
